@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "kind": "cli",
+  "setup": [
+    ["python3", "-I", "tools/make_fixtures.py"],
+    ["python3", "-I", "tools/fuzz.py"]
+  ],
+  "verify": [
+    "python3", "-I", "tools/verify.py"
+  ],
+  "demo": [
+    "python3", "-I", "tools/demo.py", "wrap"
+  ]
+}
